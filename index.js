@@ -6,9 +6,9 @@ const client = new HyperionStreamClient('https://telos.caleos.io', {async: true,
 client.onConnect = () => {
   client.streamActions({
     contract: 'telos.decide',
-    action: 'castvote',
+    action: '*',
     account: '',
-    start_from: '2019-01-01T00:00:00.000Z',
+    start_from: 1,
     read_until: 0,
     filters: [],
   });
